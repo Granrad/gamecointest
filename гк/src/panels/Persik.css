@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
+
+:root {
+  --balance-font-size: 9vw;
+};
+
+[balance=2] {
+  --balance-font-size: 10vw;
+}
+[balance=3] {
+  --balance-font-size: 7vw;
+}
+[balance=4] {
+  --balance-font-size: 5vw;
+}
+
+.Banner--ios {
+    padding: 0 12px;
+}
+.Banner--inverted, .Banner--inverted .Banner__subheader {
+    color: white;
+}
+.Banner {
+    color: black;
+    margin: 12px 0;
+}
+.Banner--ios .Banner__in {
+    border-radius: 10px;
+}
+.Banner--md-image .Banner__in, .Banner--md-image .Banner__in.Tappable--active {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+}
+.Banner__in {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.Banner__in:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    border: 1px solid rgba(0,0,0,.08);
+    z-index: 3;
+    box-sizing: border-box;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.Banner__bg, .Banner__bg>* {
+    width: 100%;
+    height: 100%;
+}
+.Banner__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.bg2 {
+    background-color: rgb(106, 99, 196);
+}
+
+.bg {
+    background-color: rgb(106, 99, 196);
+}
+
+.BalanceBox {
+    font-family: TTCommons,Roboto,Open Sans,sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: .999;
+    margin-top: 3vw;
+    color:  var(--text_background);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.BalanceBox .BalanceBox__balance {
+    color:  var(--text_background);
+    margin-top: .5vw;
+    font-weight: 600;
+    font-size: var(--balance-font-size);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 90vw
+}
+.Preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--dynamic_gray);
+}
+.BalanceBox .BalanceBox__balance .BalanceBox__icon {
+    margin-top: -3.25vw;
+    margin-left: 1.75vw;
+    width: 10vw;
+    height: 10vw
+}
+
+.BalanceBox .BalanceBox__under {
+    display: flex
+}
+
+.BalanceBox .BalanceBox__under .BalanceBox__under__box {
+    font-family: TTCommons,Roboto,Open Sans,sans-serif;
+    font-size: 3.25vw;
+    box-shadow: 0 .5vw 6vw 0 rgba(0, 0, 0, .25), 0 0 .5vw 0 rgba(0, 0, 0, .08);
+    padding: 1vw;
+    border-radius: 1.75vw;
+    position: relative;
+    top: -1.2vw;
+    color:  var(--text_background);
+    background-color:  var(--menu_background);
+    margin: 0 2.5vw
+}
+.xui {
+  text-decoration: none;
+}
